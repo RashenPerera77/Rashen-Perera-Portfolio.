@@ -56,12 +56,13 @@
             box-shadow: 0 10px 40px 0 rgba(31, 38, 135, 0.05), inset 0 2px 4px rgba(255, 255, 255, 0.6);
         }
 
+        /* UPDATED: ASH COLOR FROSTED TOP BAR */
         .glass-nav {
-            background: rgba(255, 255, 255, 0.7);
+            background: rgba(228, 233, 238, 0.85); /* Smooth Ash Gray Color */
             backdrop-filter: blur(48px);
             -webkit-backdrop-filter: blur(48px);
             border: 1px solid rgba(255, 255, 255, 0.9);
-            box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06), inset 0 2px 4px rgba(255, 255, 255, 0.8);
+            box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.08), inset 0 2px 4px rgba(255, 255, 255, 0.9);
         }
 
         .glass-dock {
@@ -218,11 +219,15 @@
                             <h3 class="text-lg font-extrabold text-blue-800 mb-1">Web Developing & Software Engineering</h3>
                             <p class="text-gray-700 font-bold text-sm sm:text-base">HTML, CSS, Mobile App Develop using Flutter, Python, Mysql</p>
                         </div>
-                        <div class="glass-panel p-6 rounded-3xl shadow-sm hover:bg-white/80 transition duration-300 border-white">
+                        
+                        <div class="glass-panel p-6 rounded-3xl shadow-sm hover:bg-white/80 transition duration-300 relative overflow-hidden border-white">
+                            <div class="absolute right-0 top-0 w-2 h-full bg-gradient-to-b from-blue-500 to-cyan-500"></div>
                             <h3 class="text-lg font-extrabold text-blue-800 mb-1">Offensive Security</h3>
                             <p class="text-gray-700 font-medium text-sm sm:text-base">Ethical Hacking, Penetration Testing, Metasploit, Meterpreter, Nmap, Kali Linux</p>
                         </div>
-                        <div class="glass-panel p-6 rounded-3xl shadow-sm hover:bg-white/80 transition duration-300 border-white">
+                        
+                        <div class="glass-panel p-6 rounded-3xl shadow-sm hover:bg-white/80 transition duration-300 relative overflow-hidden border-white">
+                            <div class="absolute right-0 top-0 w-2 h-full bg-gradient-to-b from-cyan-400 to-blue-400"></div>
                             <h3 class="text-lg font-extrabold text-blue-800 mb-1">Defensive Security & Forensics</h3>
                             <p class="text-gray-700 font-medium text-sm sm:text-base">Threat Hunting (Splunk), Memory Forensics (Volatility), OpenVAS, SSH MFA</p>
                         </div>
