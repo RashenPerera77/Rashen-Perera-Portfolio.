@@ -88,6 +88,17 @@
             color: #1e3a8a; 
         }
 
+        /* Active Nav Styling */
+        .nav-active-desktop {
+            background-color: rgba(255, 255, 255, 0.8) !important;
+            color: #1d4ed8 !important; /* blue-700 */
+        }
+
+        .nav-active-mobile {
+            background-color: rgba(255, 255, 255, 0.7) !important;
+            color: #1d4ed8 !important; /* blue-700 */
+        }
+
         .animation-delay-2000 { animation-delay: 2s; }
         .animation-delay-4000 { animation-delay: 4s; }
     </style>
@@ -404,28 +415,29 @@
                 let currentSection = "";
                 sections.forEach((section) => {
                     const sectionTop = section.offsetTop;
-                    if (window.scrollY >= sectionTop - (window.innerHeight / 3)) { 
+                    // Improved threshold for active state detection
+                    if (window.scrollY >= sectionTop - 150) { 
                         currentSection = section.getAttribute("id");
                     }
                 });
 
                 desktopLinks.forEach((link) => {
-                    link.classList.remove("bg-white/80", "text-blue-700");
+                    link.classList.remove("nav-active-desktop");
                     if (link.getAttribute("href") === `#${currentSection}`) {
-                        link.classList.add("bg-white/80", "text-blue-700");
+                        link.classList.add("nav-active-desktop");
                     }
                 });
 
                 mobileLinks.forEach((link) => {
-                    link.classList.remove("bg-white/70", "text-blue-700");
+                    link.classList.remove("nav-active-mobile");
                     if (link.getAttribute("href") === `#${currentSection}`) {
-                        link.classList.add("bg-white/70", "text-blue-700");
+                        link.classList.add("nav-active-mobile");
                     }
                 });
             }
 
             window.addEventListener("scroll", highlightNav);
-            highlightNav();
+            highlightNav(); // Initial call
         });
     </script>
 </body>
