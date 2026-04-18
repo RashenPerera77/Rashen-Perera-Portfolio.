@@ -183,18 +183,76 @@
 
     <section id="projects" class="py-24 px-4 sm:px-8 relative z-10 section-block">
         <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-16">Projects & Reports</h2>
+            <h2 class="text-4xl font-extrabold text-gray-900 text-center mb-16 drop-shadow-sm">My Projects & Reports</h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-                <div class="glass-panel rounded-[3rem] p-8 flex flex-col hover:shadow-2xl transition-all">
-                    <h3 class="text-2xl font-extrabold text-gray-900 mb-4">Penetration Testing Lab</h3>
-                    <p class="text-gray-700 mb-6 font-semibold">Developed a specialized testing lab using Metasploit and Windows Server 2008 to conduct vulnerability assessments.</p>
-                    <a href="pdfs/Penetration Testing Lab Ethical hacking.pdf" class="mt-auto block w-full text-center glass-button-blue font-extrabold py-4 rounded-2xl">View Report</a>
+                
+                <div class="glass-panel rounded-[3rem] flex flex-col hover:shadow-2xl hover:bg-white/80 transition-all duration-500 overflow-hidden shadow-lg border-white">
+                    <div class="p-8 sm:p-10 flex-1">
+                        <h3 class="text-2xl font-extrabold text-gray-900 mb-4">Healthcare Cloud Security</h3>
+                        <p class="text-gray-700 text-base font-semibold mb-6 leading-relaxed">Designed an end-to-end cybersecurity strategy for healthcare cloud environments to protect sensitive patient data using Kali Linux to simulate threat models.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-white/90 border border-blue-100 text-blue-800 text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">Kali Linux</span>
+                            <span class="bg-white/90 border border-blue-100 text-blue-800 text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">Cloud Sec</span>
+                        </div>
+                    </div>
+                    <div class="p-8 pt-0 mt-auto">
+                        <a href="pdfs/Healthcare Cloud Security report.pdf" class="block w-full text-center glass-button-blue font-extrabold text-lg py-4 rounded-2xl transition-all duration-300">View Project Report</a>
+                    </div>
                 </div>
-                <div class="glass-panel rounded-[3rem] p-8 flex flex-col hover:shadow-2xl transition-all">
-                    <h3 class="text-2xl font-extrabold text-gray-900 mb-4">Advanced Threat Hunting</h3>
-                    <p class="text-gray-700 mb-6 font-semibold">Executed CTF penetration tests and digital forensics using Volatility and Splunk for active threat monitoring.</p>
-                    <a href="pdfs/Advanced  Penetration Testing and Threat Hunting Techniques.pdf" class="mt-auto block w-full text-center glass-button-blue font-extrabold py-4 rounded-2xl">View Report</a>
+
+                <div class="glass-panel rounded-[3rem] flex flex-col hover:shadow-2xl hover:bg-white/80 transition-all duration-500 overflow-hidden shadow-lg border-white">
+                    <div class="p-8 sm:p-10 flex-1">
+                        <h3 class="text-2xl font-extrabold text-gray-900 mb-4">Penetration Testing Lab</h3>
+                        <p class="text-gray-700 text-base font-semibold mb-6 leading-relaxed">Developed a specialized testing lab using Metasploit and Windows Server 2008 to simulate real-world attack vectors and conduct vulnerability assessments.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-white/90 border border-blue-100 text-blue-800 text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">Metasploit</span>
+                            <span class="bg-white/90 border border-blue-100 text-blue-800 text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">Win Server</span>
+                        </div>
+                    </div>
+                    <div class="p-8 pt-0 mt-auto">
+                        <a href="pdfs/Penetration Testing Lab Ethical hacking.pdf" class="block w-full text-center glass-button-blue font-extrabold text-lg py-4 rounded-2xl transition-all duration-300">View Project Report</a>
+                    </div>
                 </div>
+
+                <div class="glass-panel rounded-[3rem] flex flex-col hover:shadow-2xl hover:bg-white/80 transition-all duration-500 overflow-hidden shadow-lg border-white">
+                    <div class="p-8 sm:p-10 flex-1">
+                        <h3 class="text-2xl font-extrabold text-gray-900 mb-4">Secure Database Portal</h3>
+                        <p class="text-gray-700 text-base font-semibold mb-6 leading-relaxed">Engineered a secure "Lost and Found" portal for APIIT, focusing on database integrity and preventing web vulnerabilities like SQL injection.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-white/90 border border-emerald-100 text-emerald-800 text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">PHP</span>
+                            <span class="bg-white/90 border border-emerald-100 text-emerald-800 text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">MySQL</span>
+                            <span class="bg-white/90 border border-emerald-100 text-emerald-800 text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">Web Dev</span>
+                        </div>
+                    </div>
+                    <div class="p-8 pt-0 mt-auto">
+                        <a href="pdfs/Secure Database Portal.pdf" class="block w-full text-center glass-button-blue font-extrabold text-lg py-4 rounded-2xl transition-all duration-300">View Project Report</a>
+                    </div>
+                </div>
+
+                <div class="glass-panel rounded-[3rem] flex flex-col hover:shadow-2xl hover:bg-white/80 transition-all duration-500 overflow-hidden shadow-lg border-white">
+                    <div class="p-8 sm:p-10 flex-1 flex flex-col">
+                        <h3 class="text-2xl font-extrabold text-gray-900 mb-4">Advanced Pentesting & Threat Hunting</h3>
+                        <p class="text-gray-700 text-base font-semibold leading-relaxed mb-6">
+                            Executed CTF-style penetration tests involving SSH MFA bypass attempts and digital forensics using Volatility. Utilized Splunk for active threat hunting to monitor and log suspicious network activity.
+                        </p>
+                        <div class="mt-auto">
+                            <div class="bg-white/70 border border-white p-4 rounded-2xl mb-5 shadow-sm">
+                                <p class="text-gray-800 text-sm font-semibold">
+                                    🌟 <span class="font-extrabold text-blue-700">Group Project:</span> Advanced Pentesting & Splunk Threat Hunting.
+                                </p>
+                            </div>
+                            <div class="flex flex-wrap gap-2 mb-2">
+                                <span class="bg-white/90 border border-blue-100 text-blue-800 text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">Splunk</span>
+                                <span class="bg-white/90 border border-blue-100 text-blue-800 text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">Volatility</span>
+                                <span class="bg-white/90 border border-blue-100 text-blue-800 text-xs px-4 py-1.5 rounded-full font-extrabold shadow-sm">Forensics</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-8 pt-0">
+                        <a href="pdfs/Advanced  Penetration Testing and Threat Hunting Techniques.pdf" class="block w-full text-center glass-button-blue font-extrabold text-lg py-4 rounded-2xl transition-all duration-300">View Project Report</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -249,46 +307,6 @@
                     <h3 class="text-xl font-extrabold text-gray-900 mb-1">Software Design Requirements</h3>
                     <p class="text-blue-800 font-extrabold mb-4 text-sm bg-blue-100/60 px-4 py-1.5 rounded-xl">LinkedIn Learning</p>
                     <p class="text-gray-600 font-medium text-sm mb-6">Advanced techniques for gathering and developing software requirements.</p>
-                    <a href="https://www.linkedin.com/in/rashen-perera-271857300/details/certifications/" target="_blank" class="mt-auto w-full glass-button-blue py-4 rounded-2xl font-extrabold text-sm">View Credential ↗</a>
-                </div>
-
-                <div class="glass-panel p-8 rounded-[2.5rem] flex flex-col items-center text-center hover:bg-white/80 transition-all shadow-xl">
-                    <div class="w-20 h-20 bg-[#0a66c2]/5 border border-white text-[#0a66c2] rounded-2xl flex items-center justify-center mb-5 text-4xl font-extrabold">in</div>
-                    <h3 class="text-xl font-extrabold text-gray-900 mb-1">Software Testing/QA</h3>
-                    <p class="text-blue-800 font-extrabold mb-4 text-sm bg-blue-100/60 px-4 py-1.5 rounded-xl">LinkedIn Learning</p>
-                    <p class="text-gray-600 font-medium text-sm mb-6">Comprehensive overview of Quality Assurance and software testing methodologies.</p>
-                    <a href="https://www.linkedin.com/in/rashen-perera-271857300/details/certifications/" target="_blank" class="mt-auto w-full glass-button-blue py-4 rounded-2xl font-extrabold text-sm">View Credential ↗</a>
-                </div>
-
-                <div class="glass-panel p-8 rounded-[2.5rem] flex flex-col items-center text-center hover:bg-white/80 transition-all shadow-xl">
-                    <div class="w-20 h-20 bg-[#0a66c2]/5 border border-white text-[#0a66c2] rounded-2xl flex items-center justify-center mb-5 text-4xl font-extrabold">in</div>
-                    <h3 class="text-xl font-extrabold text-gray-900 mb-1">Ransomware Awareness</h3>
-                    <p class="text-blue-800 font-extrabold mb-4 text-sm bg-blue-100/60 px-4 py-1.5 rounded-xl">LinkedIn Learning</p>
-                    <p class="text-gray-600 font-medium text-sm mb-6">Expert-level training on identifying and preventing ransomware attacks.</p>
-                    <a href="https://www.linkedin.com/in/rashen-perera-271857300/details/certifications/" target="_blank" class="mt-auto w-full glass-button-blue py-4 rounded-2xl font-extrabold text-sm">View Credential ↗</a>
-                </div>
-
-                <div class="glass-panel p-8 rounded-[2.5rem] flex flex-col items-center text-center hover:bg-white/80 transition-all shadow-xl">
-                    <div class="w-20 h-20 bg-[#0a66c2]/5 border border-white text-[#0a66c2] rounded-2xl flex items-center justify-center mb-5 text-4xl font-extrabold">in</div>
-                    <h3 class="text-xl font-extrabold text-gray-900 mb-1">Python for Students</h3>
-                    <p class="text-blue-800 font-extrabold mb-4 text-sm bg-blue-100/60 px-4 py-1.5 rounded-xl">LinkedIn Learning</p>
-                    <p class="text-gray-600 font-medium text-sm mb-6">Core programming foundations including syntax, logic, and data structures.</p>
-                    <a href="https://www.linkedin.com/in/rashen-perera-271857300/details/certifications/" target="_blank" class="mt-auto w-full glass-button-blue py-4 rounded-2xl font-extrabold text-sm">View Credential ↗</a>
-                </div>
-
-                <div class="glass-panel p-8 rounded-[2.5rem] flex flex-col items-center text-center hover:bg-white/80 transition-all shadow-xl">
-                    <div class="w-20 h-20 bg-[#0a66c2]/5 border border-white text-[#0a66c2] rounded-2xl flex items-center justify-center mb-5 text-4xl font-extrabold">in</div>
-                    <h3 class="text-xl font-extrabold text-gray-900 mb-1">Learning Python</h3>
-                    <p class="text-blue-800 font-extrabold mb-4 text-sm bg-blue-100/60 px-4 py-1.5 rounded-xl">LinkedIn Learning</p>
-                    <p class="text-gray-600 font-medium text-sm mb-6">Foundational Python course covering standard libraries and scripts.</p>
-                    <a href="https://www.linkedin.com/in/rashen-perera-271857300/details/certifications/" target="_blank" class="mt-auto w-full glass-button-blue py-4 rounded-2xl font-extrabold text-sm">View Credential ↗</a>
-                </div>
-
-                <div class="glass-panel p-8 rounded-[2.5rem] flex flex-col items-center text-center hover:bg-white/80 transition-all shadow-xl">
-                    <div class="w-20 h-20 bg-blue-50 border border-white text-blue-800 rounded-2xl flex items-center justify-center mb-5 text-xl font-extrabold">HP</div>
-                    <h3 class="text-xl font-extrabold text-gray-900 mb-1">AI for Beginners</h3>
-                    <p class="text-blue-800 font-extrabold mb-4 text-sm bg-blue-100/60 px-4 py-1.5 rounded-xl">HP LIFE</p>
-                    <p class="text-gray-600 font-medium text-sm mb-6">Foundational knowledge in AI and real-world applications.</p>
                     <a href="https://www.linkedin.com/in/rashen-perera-271857300/details/certifications/" target="_blank" class="mt-auto w-full glass-button-blue py-4 rounded-2xl font-extrabold text-sm">View Credential ↗</a>
                 </div>
             </div>
